@@ -13,3 +13,6 @@ ggplot(data = ToothGrowth, aes(x = supp, y = len)) +
        y = "Tooth Length")
 
 # I'd better start giving my guinea pigs some oj...
+
+ggplot(data = ToothGrowth, (aes(x = dose, y = len))) +
+  geom_line(aes(colour = supp))
