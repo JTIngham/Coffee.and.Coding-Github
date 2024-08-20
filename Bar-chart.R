@@ -9,6 +9,7 @@ data(ToothGrowth)
 
 ggplot(data = ToothGrowth, aes(x = supp, y = len)) +
   geom_col(aes(fill = dose), position = "dodge2") +
-  labs(title = "Guinea Pig Tooth Growth")
+  labs(title = "Guinea Pig Tooth Growth",
+       y = "Tooth Length")
 
 # I'd better start giving my guinea pigs some oj...
